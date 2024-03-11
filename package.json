@@ -12,8 +12,7 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*",
-    "vite-plugin-react-remove-attributes": "^1.0.3"
+   
   },
   "scripts": {
     "start": "react-scripts start",
