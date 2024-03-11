@@ -22,7 +22,7 @@ export async function action({ request }) {
     try {
         const data = await loginUser({ email, password })
         localStorage.setItem("loggedin", true)
-        return (pathname)
+        return redirect(pathname)
     } catch(err) {
         return err.message
     }
