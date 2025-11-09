@@ -1,10 +1,11 @@
 import React from "react"
+import incomeImg from "../../assets/images/income-graph.png"
 
 export default function Income() {
     const transactionsData = [
-        { amount: 720, date: "Jan 3, '23", id: "1" },
-        { amount: 560, date: "Dec 12, '22", id: "2" },
-        { amount: 980, date: "Dec 3, '22", id: "3" },
+        { amount: 720, date: "Jan 3, '25", id: "1" },
+        { amount: 560, date: "Dec 12, '24", id: "2" },
+        { amount: 980, date: "Dec 3, '23", id: "3" },
     ]
     return (
         <section className="host-income">
@@ -15,13 +16,13 @@ export default function Income() {
             <h2>$2,260</h2>
             <img
                 className="graph"
-                src="/assets/images/income-graph.png"
+                src={incomeImg}
                 alt="Income graph"
             />
             <div className="info-header">
                 <h3>Your transactions (3)</h3>
                 <p>
-                    Last <span>30 days</span>
+                    Last <span>5 years</span>
                 </p>
             </div>
             <div className="transactions">

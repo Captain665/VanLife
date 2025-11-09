@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams, Link, NavLink, Outlet, useLoaderData } from "react-router-dom"
+import { Link, NavLink, Outlet, useLoaderData } from "react-router-dom"
 import { getHostVans } from "../../api"
 import { requireAuth } from "../../utils"
 
@@ -27,7 +27,7 @@ export default function HostVanDetail() {
 
             <div className="host-van-detail-layout-container">
                 <div className="host-van-detail">
-                    <img src={currentVan.imageUrl} />
+                    <img alt="qwe" src={currentVan.imageUrl} />
                     <div className="host-van-detail-info-text">
                         <i
                             className={`van-type van-type-${currentVan.type}`}
